@@ -1,0 +1,9 @@
+#Mapping values
+#Mon Sep 29 17:06:52 SGT 2014
+Name=Name
+Engine_Prefix=Engine_Prefix__c
+EDMS_Model_Name=EDMS_Model_Name__c
+ProductCode=ProductCode
+EDMS_Model_Id=EDMS_Model_Id__c
+lastUpdate=
+Chassis_Prefix=Chassis_Prefix__c

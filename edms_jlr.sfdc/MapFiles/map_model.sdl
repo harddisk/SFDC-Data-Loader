@@ -1,0 +1,13 @@
+#Mapping values
+#Thu Sep 03 16:37:25 SGT 2015
+Fuel_Type=Fuel__c
+EDMS_Make=EDMS_Make__c
+Model_Desc=Description__c
+Transmission=Transmission__c
+Engine_Capacity=Engine_Capacity__c
+Name=Name
+EDMS_Model_No=Short_Description__c
+EDMS_Type=EDMS_Type__c
+Body_Type=Body_Type__c
+EDMS_Model_Id=EDMS_Model_Id__c
+EDMS_Company=EDMS_Company__c

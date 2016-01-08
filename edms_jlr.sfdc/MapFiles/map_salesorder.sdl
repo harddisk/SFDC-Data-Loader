@@ -1,0 +1,19 @@
+#Mapping values
+#Thu Sep 03 15:52:14 SGT 2015
+Registration_Number=Registration_Number__c
+Colour=Colour__c
+Delivery_State=Delivery_State__c
+Delivery_Postcode=Delivery_Postcode__c
+Chassis_Number=EDMS_Chassis_Number__c
+Dealer_Name=Dealer_Name__c
+Customer_Phone=Customer_Phone__c
+Customer_Email=Customer_Email__c
+Registration_Date=Registration_Date__c
+Delivery_Address=Delivery_Address__c
+Vehicle_Remark=Vehicle_Remark__c
+Remark=Remark__c
+EDMS_Dealer_Id=EDMS_Dealer_Id__c
+Delivery_City=Delivery_City__c
+EDMS_Sales_Order_Id=EDMS_Sales_Order_Id__c
+EDMS_Customer_Id=EDMS_Customer_Id__c
+EDMS_Company=EDMS_Company__c

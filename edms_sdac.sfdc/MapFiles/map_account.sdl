@@ -1,0 +1,27 @@
+#Mapping values
+#Thu Apr 28 18:35:50 SGT 2011
+EDMS_Account_Type
+RecordTypeId=RecordTypeId
+Corporate_CustomerId=NRIC_Number__c
+Corporate_Name=Name
+Corporate_BillingCity=BillingCity
+Corporate_BillingCountry=BillingCountry
+Corporate_BillingPostalCode=BillingPostalCode
+Corporate_BillingState=BillingState
+Corporate_BillingStreet=BillingStreet
+Corporate_Email=Office_Email__c
+Account_Phone=Phone
+Contact_CustomerId=NRIC__pc
+Salutation=Salutation
+Person_Gender=Gender__pc
+Person_LastName=LastName
+Person_Birthdate=PersonBirthdate
+Person_MailingCity=PersonMailingCity
+Person_MailingCountry=PersonMailingCountry
+Person_MailingPostalCode=PersonMailingPostalCode
+Person_MailingState=PersonMailingState
+Person_MailingStreet=PersonMailingStreet
+Person_Email=Home_Email__c
+Person_HomePhone=PersonHomePhone
+Person_MobilePhone=Mobile_Preferred__pc
+Race=Race__pc

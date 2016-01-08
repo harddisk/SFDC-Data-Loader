@@ -1,0 +1,35 @@
+#Mapping values
+#Thu May 19 10:28:53 SGT 2011
+Service\ Advisor\ Name=Service_Advisor__c
+Model\ Code=Vehicle_Model__c
+VAT\ Amount=VAT__c
+Mileage=Mileage__c
+Registration\ Date=Registration_Date__c
+Owner\ Email\ Add=Owner_Email__c
+Parts\ Amount=Part_Amount__c
+Complaints=Descriptions__c
+Registration\ No=Registration_Number__c
+Owner\ Telephone=Owner_Home_Phone__c
+Ro\ Date=Service_Date__c
+Customer\ Hand\ Phone=Customer_Mobile_Phone__c
+Name=Name
+RO\ Year=Current_Year__c
+Owner\ Hand\ Phone=Owner_Mobile_Phone__c
+RO\ No=Repair_Order_Number__c
+Workshop=Service_Dealer__c
+Vehicle\ Type=Vehicle_Type__c
+Chassis\ No=Chassis_Number__r\:chassis_no_external__c
+Customer\ Email\ Add=Customer_Email__c
+Owner\ Name=Owner_Name__c
+Customer\ Telephone=Customer_Home_Phone__c
+Owner\ Telephone2=Owner_Work_Phone__c
+Total\ Invoice=Total_Invoiced__c
+Identifier=GDMS_Unique_Id__c
+Sublet\ Amount=Sublet_Amount__c
+Status=Status__c
+Engine\ No=Engine_Number__c
+Model\ Description=Model_Description__c
+Customer\ Name=Customer_Name__c
+Company=Company__c
+Labour\ Amount=Labour_Amount__c
+Customer\ Telephone2=Customer_Work_Phone__c

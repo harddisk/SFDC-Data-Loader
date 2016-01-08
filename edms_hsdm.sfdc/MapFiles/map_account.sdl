@@ -1,0 +1,28 @@
+#Mapping values
+#Thu Apr 28 18:35:50 SGT 2011
+Person_Birthdate=PersonBirthdate
+Person_FirstName=FirstName
+Corporate_Email=CompanyEmail__c
+Person_MobilePhone=PersonMobilePhone
+Person_MailingCountry=PersonMailingCountry
+Person_Email=PersonEmail
+RecordTypeId=RecordTypeId
+Corporate_BillingCity=BillingCity
+Corporate_Name=Name
+Race__pc=Race__pc
+Contact_CustomerId__c=ContactCustomerId__pc
+Corporate_BillingStreet=BillingStreet
+Corporate_BillingState=BillingState
+Corporate_BillingCountry=BillingCountry
+Corporate_BillingPostalCode=BillingPostalCode
+Person_MailingPostalCode=PersonMailingPostalCode
+Person_MailingState=PersonMailingState
+Person_Gender__pc=Gender__pc
+Person_HomePhone=PersonHomePhone
+EDMS_Account_Type=
+Person_LastName=LastName
+Salutation=Salutation
+Account_Phone=Phone
+Person_MailingStreet=PersonMailingStreet
+Corporate_CustomerId__c=CustomerId__c
+Person_MailingCity=PersonMailingCity

@@ -1,0 +1,171 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="csvUpsertDealer"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Dealers from CSV file into Dealer__c custom object.</description>
+		<property name="name" value="csvUpsertDealer"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertDealer.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="EDMS_Dealer_Id__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Dealer__c"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_dealer.sdl"/>
+			<entry key="process.outputError" value=".\upsertDealer_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertDealer_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\dealer.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>
+
+    <bean id="csvUpsertProduct"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Vehicle Models from CSV file into Vehicle_Model__c custom object.</description>
+		<property name="name" value="csvUpsertProduct"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertModel.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="EDMS_Model_Id__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Vehicle_Model__c"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_model.sdl"/>
+			<entry key="process.outputError" value=".\upsertModel_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertModel_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\model.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>
+
+    <bean id="csvUpsertAccount"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Accounts from CSV file into Account standard object.</description>
+		<property name="name" value="csvUpsertAccount"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertAccount.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="NRIC_Number__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Account"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_account.sdl"/>
+			<entry key="process.outputError" value=".\upsertAccount_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertAccount_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\account.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>	
+	
+    <bean id="csvUpsertVehicle"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Vehicles from CSV file into Vehicle__c custom object.</description>
+		<property name="name" value="csvUpsertVehicle"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertVehicle.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="Full_Chassis__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Vehicle__c"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_vehicle.sdl"/>
+			<entry key="process.outputError" value=".\upsertVehicle_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertVehicle_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\vehicle.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>
+	
+    <bean id="csvUpsertSalesOrder"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Sales Order from CSV file into Sales_Order__c custom object.</description>
+		<property name="name" value="csvUpsertSalesOrder"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertSalesOrder.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="EDMS_Sales_Order_Id__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Sales_Order__c"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_salesorder.sdl"/>
+			<entry key="process.outputError" value=".\upsertSalesOrder_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertSalesOrder_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\salesorder.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>	
+
+    <bean id="csvUpsertServiceRecord"
+	      class="com.salesforce.dataloader.process.ProcessRunner"
+	      singleton="false">
+		<description>Upserts Service Record from CSV file into Service_Record__c custom object.</description>
+		<property name="name" value="csvUpsertServiceRecord"/>
+		<property name="configOverrideMap">
+		<map>
+			<entry key="sfdc.debugMessages" value="true"/>
+			<entry key="sfdc.debugMessagesFile" value="..\Logs\csvUpsertServiceRecord.log"/>
+			<entry key="sfdc.endpoint" value="https://test.salesforce.com"/>
+			<entry key="sfdc.externalIdField" value="GDMS_Unique_Id__c" />
+			<entry key="sfdc.timeoutSecs" value="540"/>
+			<entry key="sfdc.loadBatchSize" value="200"/>
+			<entry key="sfdc.entity" value="Service_Record__c"/>
+			<entry key="sfdc.timezone" value="Asia/Kuala_Lumpur"/>
+			<entry key="process.operation" value="upsert"/>
+			<entry key="process.mappingFile" value="..\MapFiles\map_servicerecord.sdl"/>
+			<entry key="process.outputError" value=".\upsertServiceRecord_err.csv"/>
+			<entry key="process.outputSuccess" value=".\upsertServiceRecord_ok.csv"/>
+			<entry key="dataAccess.name" value="..\CSV\serviceRecord.csv" />
+			<entry key="dataAccess.type" value="csvRead" />
+			<entry key="process.useEuropeanDates" value="true"/>
+			<entry key="sfdc.debugMessages" value="false"/>
+			<entry key="process.initialLastRunDate" value="2007-06-06T00:00:00.000-0800"/>
+		</map>
+		</property>
+    </bean>	
+
+</beans>

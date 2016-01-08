@@ -1,0 +1,15 @@
+#Mapping values
+#Thu Sep 03 15:59:05 SGT 2015
+Registration_Number=Registration_Number__c
+EDMS_Make=EDMS_Make__c
+Production\ Year=Production_Year__c
+Production\ Month=Production_Month__c
+Production_Date=Production_Date__c
+Customer_Id=EDMS_Customer_Id__c
+Name=Name
+Registration_Date=Registration_Date__c
+Engine_Number=Engine_Number__c
+EDMS_Type=EDMS_Vehicle_Type__c
+EDMS_Model_Id=EDMS_Model_Id__c
+EDMS_Company=EDMS_Company__c
+EDMS_Chassis_Number=Full_Chassis__c

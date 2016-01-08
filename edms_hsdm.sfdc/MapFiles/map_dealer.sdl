@@ -1,0 +1,7 @@
+#Mapping values
+#Mon Sep 29 17:16:57 SGT 2014
+EDMS_Dealer_Name=EDMS_Dealer_Name__c
+Dealer_Phone=Phone__c
+Dealer_Email=Email__c
+SAP_Code=SAP_Code__c
+EDMS_Dealer_Id=EDMS_Dealer_Id__c
